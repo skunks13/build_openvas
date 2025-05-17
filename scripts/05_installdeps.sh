@@ -51,7 +51,7 @@ apt install -y \
   rsync \
   xsltproc
 
-apt install -y --no-install-recommends \x
+apt install -y --no-install-recommends \
   dpkg \
   fakeroot \
   gnupg \
