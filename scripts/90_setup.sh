@@ -42,7 +42,7 @@ cp -r /tmp/openvas-gnupg/* $OPENVAS_GNUPG_HOME/
 chown -R gvm:gvm $OPENVAS_GNUPG_HOME
 
 apt install -y postgresql
-systemctl start postgresql@16-main
+systemctl start postgresql@15-main
 
 sudo -u postgres bash <<EOF
 cd
