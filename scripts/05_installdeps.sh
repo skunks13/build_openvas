@@ -20,68 +20,72 @@ apt install --no-install-recommends --assume-yes \
 
 # gvm-libs dependencies
 apt install -y \
+  libcjson-dev \
+  libcurl4-gnutls-dev \
+  libgcrypt-dev \
   libglib2.0-dev \
-  libgpgme-dev \
   libgnutls28-dev \
-  uuid-dev \
-  libssh-gcrypt-dev \
+  libgpgme-dev \
   libhiredis-dev \
-  libxml2-dev \
-  libpcap-dev \
   libnet1-dev \
-  libpaho-mqtt-dev
+  libpaho-mqtt-dev \
+  libpcap-dev \
+  libssh-dev \
+  libxml2-dev \
+  uuid-dev
 
 apt install -y \
   libldap2-dev \
   libradcli-dev
-
+  
 # gvmd dependenices
 apt install -y \
+  libbsd-dev \
+  libcjson-dev \
   libglib2.0-dev \
   libgnutls28-dev \
-  libpq-dev \
-  postgresql-server-dev-16 \
+  libgpgme-dev \
   libical-dev \
-  xsltproc \
+  libpq-dev \
+  postgresql-server-dev-all \
   rsync \
-  libbsd-dev \
-  libgpgme-dev
+  xsltproc
 
-apt install -y --no-install-recommends \
-  texlive-latex-extra \
-  texlive-fonts-recommended \
-  xmlstarlet \
-  zip \
-  rpm \
-  fakeroot \
+apt install -y --no-install-recommends \x
   dpkg \
-  nsis \
+  fakeroot \
   gnupg \
-  gpgsm \
-  wget \
-  sshpass \
-  openssh-client \
-  socat \
-  snmp \
-  python3 \
-  smbclient \
-  python3-lxml \
   gnutls-bin \
-  xml-twig-tools
+  gpgsm \
+  nsis \
+  openssh-client \
+  python3 \
+  python3-lxml \
+  rpm \
+  smbclient \
+  snmp \
+  socat \
+  sshpass \
+  texlive-fonts-recommended \
+  texlive-latex-extra \
+  wget \
+  xmlstarlet \
+  zip
 
 # pg-gvm
 apt install -y \
   libglib2.0-dev \
-  postgresql-server-dev-16 \
-  libical-dev
-
+  libical-dev \
+  postgresql-server-dev-all
+  
 # gsad
 apt install -y \
-  libmicrohttpd-dev \
-  libxml2-dev \
+  libbrotli-dev \
   libglib2.0-dev \
-  libgnutls28-dev
-
+  libgnutls28-dev \
+  libmicrohttpd-dev \
+  libxml2-dev
+  
 # openvas-scanner
 apt install -y \
   bison \
@@ -95,8 +99,9 @@ apt install -y \
   nmap \
   libjson-glib-dev \
   libcurl4-gnutls-dev \
-  libbsd-dev
-
+  libbsd-dev \
+  krb5-multidev
+  
 apt install -y \
   python3-impacket \
   libsnmp-dev
@@ -106,6 +111,7 @@ apt install -y \
   python3 \
   python3-pip \
   python3-setuptools \
+  python3-packaging \
   python3-wrapt \
   python3-cffi \
   python3-psutil \
@@ -119,7 +125,7 @@ apt install -y \
 # openvas
 apt install -y 
   rust-all
-
+  
 apt install -y \
   pkg-config \
   libssl-dev
