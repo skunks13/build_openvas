@@ -1,6 +1,6 @@
 #!/bin/bash
 #
-source ../exports.sh
+source ./exports.sh
 
 curl -f -L https://github.com/skunks13/gsa/releases/download/v$GSA_VERSION/gsa-dist-$GSA_VERSION.tar.gz -o $SOURCE_DIR/gsa-$GSA_VERSION.tar.gz
 
